@@ -1,0 +1,17 @@
+*AZERTYTREZA*==say "Quel est ton choix ?"
+>(*)==AZERTYTREZA;
+
+*QUI*PERSONNALIT*==jv_pg_testpersonlalite_qui
+
+*EFFACE*PERSONNALIT*==jv_pg_testpersonlalite_efface
+>(*)==if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; else jv_pg_testpersonlalite_efface_suite; fi; return
+
+*RAPPE*PERSONNALIT*DE (*)==if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; return; fi && jv_pg_testpersonlalite_rappel (1) && if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; return; fi
+>(*)==if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; else jv_pg_testpersonlalite_rappel_suite_A; fi; return
+
+*TEST*PERSONNALITE*==if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; return; else memo_testpersonlalite="$1" && jv_pg_testpersonlalite; fi && if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; return; fi
+>(*)==if [[ "$GOTOSORTIPESRONNALITE" == "FIN" ]]; then commands="$(jv_get_commands)"; jv_handle_order "EYUJGDE"; return; else jv_pg_testpersonlalite; fi; return
+
+
+
+EYUJGDE==GOTOSORTIPESRONNALITE=""; testpersonlalite_reset; return; 
