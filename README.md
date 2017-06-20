@@ -1,6 +1,6 @@
 ## Description
 
-Ce plugin permet de passer un test de personnalité N°1.
+Ce plugin permet de passer avec Jarvis un test de personnalité N°1.
 
 ## Languages
 
